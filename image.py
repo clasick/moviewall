@@ -12,24 +12,8 @@ except IndexError:
     print('Example: python image.py clasick')
 
 for file in os.listdir(USER + '/'):
-    if file.endswith('.jpg'):
-        list_im.append(USER + '/'  + file)
-
-list_im.sort(key=lambda x: os.stat(os.path.join('', x)).st_mtime)
-
-imgs = [ Image.open(i) for i in list_im]
-
-min_shape = (230,330)
-
-horz = []
-try:
-    USER = sys.argv[1]
-except IndexError:
-    print('Please enter the name of the user to retrieve the wallaper for!')
-    print('Example: python image.py clasick')
-
-for file in os.listdir(USER + '/'):
-    if file.endswith('.jpg'):
+    if file.endswith('.jpg') and "wallpaper" not in file:
+        print("Gathering image: {}".format(file))
         list_im.append(USER + '/'  + file)
 
 list_im.sort(key=lambda x: os.stat(os.path.join('', x)).st_mtime)
