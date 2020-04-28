@@ -36,7 +36,11 @@ for x in range(0,36,9):
 
 vert = np.vstack(line for line in horz)
 
-#imgs_comb = np.hstack((np.asarray(i.resize(min_shape)) for i in imgs))
-
 imgs_comb = Image.fromarray(vert)
+
+save_path = USER + '/wallpaper.jpg'
+
 imgs_comb.save(USER + '/wallpaper.jpg')
+
+if os.path.exists(save_path):
+    print("File created at: {}".format(save_path))
