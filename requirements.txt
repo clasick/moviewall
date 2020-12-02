@@ -20,7 +20,7 @@ click==7.1.1
 colorama==0.4.3
 configobj==5.0.6
 contextlib2==0.6.0.post1
-cryptography==2.9.2
+cryptography==3.2
 decorator==4.4.2
 diskcache==2.9.0
 distlib==0.3.0
