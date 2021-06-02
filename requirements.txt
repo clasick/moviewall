@@ -136,7 +136,7 @@ tldr==0.5
 toml==0.10.0
 tornado==6.0.4
 trans==2.1.0
-urllib3==1.25.9
+urllib3==1.26.5
 urwid==2.1.0
 virtualenv==20.0.18
 webencodings==0.5.1
