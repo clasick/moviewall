@@ -68,7 +68,7 @@ Mako==1.1.2
 Markdown==3.1.1
 MarkupSafe==1.1.1
 meson==0.54.1
-mitmproxy==5.1.1
+mitmproxy==7.0.3
 msgpack==1.0.0
 numpy==1.18.3
 ordered-set==3.1.1
